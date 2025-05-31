@@ -3,7 +3,10 @@
 ## Overview
 This repository contains an analysis of a malicious JavaScript sample found on Pastebin, which masquerades as a benign "theme changer" utility. The script is heavily obfuscated and exhibits clear malicious behavior.
 
+
 ⚠️ **Warning**: Do not execute this script outside of a controlled sandbox environment.
+
+ 💚 Credits to ***Amine*** for helping me realise that no more current leads exist.
 
 ## Sample Information
 - **Source**: [Pastebin Link](https://pastebin.com/raw/UqK3rjrA)
@@ -82,6 +85,48 @@ Why such theory? GameCodeMaster is an owner of 'Tester' Badge, which these days 
 What of the post/feed that stores the comments? - I'm still trying to locate it, trying to finalise the investigation.
 No hits in unpublished projects, deleted maps or anywhere else.
 Due to this issue - figuring out who's behind the script is currently impossible.
-Stay safe, folks.
 
 ![image](https://github.com/user-attachments/assets/50b0b399-baad-4b8b-b0e1-7dbb30eeb70f)
+
+
+## Conclusion & Recommendations
+
+### Summary of Findings
+1. **Malicious Intent Confirmed**  
+   The script is definitively a credential stealer masquerading as a theme utility, with:
+   - Password harvesting via forced re-authentication
+   - Data exfiltration to a public comment feed
+   - Deliberate obfuscation to evade detection
+
+2. **Attack Infrastructure**  
+   - Utilizes Kogama's legitimate API as C2 channel
+   - Targets: `https://www.kogama.com/api/feed/31872096/comment/`
+   - Persistence: Stored credentials in `localStorage` under key `'poop'`
+
+3. **Attribution Challenges**  
+   - Only two affected accounts detected ([GameCodeMaster](https://www.kogama.com/profile/670030842/) and [Boris Jacob Anderson](https://www.kogama.com/profile/670351929/))
+   - Possible scenarios:
+     * Attacker testing their own malware
+     * Compromised developer account
+     * False flag operation
+
+### Mitigation Strategies
+| Action | Implementation |
+|--------|----------------|
+| Credential Rotation | All potentially exposed users should change passwords |
+| API Monitoring | Kogama should investigate abnormal comment patterns on feed #31872096 |
+| Client Protection | Block execution of scripts from untrusted paste sites |
+
+### Future Research Directions
+- **Feed Origin Analysis**: Continue hunting for the parent feed object
+- **Pattern Correlation**: Compare with other Kogama-targeting malware
+- **Attacker TTPs**: Document tactics for threat intelligence sharing
+
+### Community Call-to-Action
+Help expand this analysis by:
+1. Reporting additional affected accounts via Issues
+2. Contributing YARA rules for detection
+3. Sharing related samples in the wild
+
+> **Final Note**: This remains an active investigation. Last updated: May 2025  
+> ![Malware Execution Flow](https://github.com/user-attachments/assets/50b0b399-baad-4b8b-b0e1-7dbb30eeb70f)

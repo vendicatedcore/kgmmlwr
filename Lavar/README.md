@@ -109,7 +109,7 @@ Due to this issue - figuring out who's behind the script is currently impossible
    - Only two affected accounts detected ([GameCodeMaster](https://www.kogama.com/profile/670030842/) and [Boris Jacob Anderson](https://www.kogama.com/profile/670351929/))
    - Possible scenarios:
      * Attacker testing their own malware
-     * Compromised developer account
+     * Compromised naive accounts
      * False flag operation
 
 ### Mitigation Strategies

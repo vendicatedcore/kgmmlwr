@@ -88,6 +88,8 @@ Due to this issue - figuring out who's behind the script is currently impossible
 
 ![image](https://github.com/user-attachments/assets/50b0b399-baad-4b8b-b0e1-7dbb30eeb70f)
 
+> [**This is what happens when you execute the script**](https://youtu.be/cgtRLFCTV40 )
+
 
 ## Conclusion & Recommendations
 

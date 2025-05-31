@@ -81,3 +81,7 @@ Why such theory? GameCodeMaster is an owner of 'Tester' Badge, which these days 
 
 What of the post/feed that stores the comments? - I'm still trying to locate it, trying to finalise the investigation.
 No hits in unpublished projects, deleted maps or anywhere else.
+Due to this issue - figuring out who's behind the script is currently impossible.
+Stay safe, folks.
+
+![image](https://github.com/user-attachments/assets/50b0b399-baad-4b8b-b0e1-7dbb30eeb70f)

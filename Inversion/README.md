@@ -82,9 +82,11 @@ As of [May 31, 2025 20:24]([https://github.com/vendicatedcore/kgmmlwr/blob/main/
 ~~Either the person behind this script is GameCodeMaster simply testing their own sample, or that account has been stolen because of their naive traits.
 Why such theory? GameCodeMaster is an owner of 'Tester' Badge, which these days - isn't rare, but it just may be an indicator.~~
 
-*What of the post/feed that stores the comments? - I'm still trying to locate it, trying to finalise the investigation.
+*~~What of the post/feed that stores the comments? - I'm still trying to locate it, trying to finalise the investigation.
 No hits in unpublished projects, deleted maps or anywhere else.
-Due to this issue - figuring out who's behind the script is currently impossible.
+Due to this issue - figuring out who's behind the script is currently impossible.~~
+
+It appears that the usual feed_id URL works like ``feed/profile_id/`` - but since this profile has been deleted a longer while ago, there's absolutely no way to find more as such things provide no posterID. This lead is a dead trope.
 
 ![image](https://github.com/user-attachments/assets/50b0b399-baad-4b8b-b0e1-7dbb30eeb70f)
 

@@ -7,7 +7,8 @@ If you've fallen victim to this silly script, but still have access to your acco
 ```js
 localStorage.clear();
 ```
-4. Open the current [comment section state](https://www.kogama.com/api/feed/31872096/comment/) of the feed and locate every object that has your username, eg.
+4. Refresh the page and change your password.
+5. Open the current [comment section state](https://www.kogama.com/api/feed/31872096/comment/) of the feed and locate every object that has your username, eg.
 ```json
     "id": 55718581, <--- Here is the Comment ID that we will need in a second
       "profile_id": 111111,

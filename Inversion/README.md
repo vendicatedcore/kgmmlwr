@@ -86,7 +86,7 @@ Why such theory? GameCodeMaster is an owner of 'Tester' Badge, which these days 
 No hits in unpublished projects, deleted maps or anywhere else.
 Due to this issue - figuring out who's behind the script is currently impossible.~~
 
-It appears that the usual feed_id URL works like ``feed/profile_id/`` - but since this profile has been deleted a longer while ago, there's absolutely no way to find more as such things provide no posterID. This lead is a dead trope.
+It appears that the usual feed_id URL for many cases works like ``feed/profile_id/`` - but since this profile has been deleted a longer while ago, there's absolutely no way to find more as such things provide no posterID. This lead is a dead trope.
 
 ![image](https://github.com/user-attachments/assets/50b0b399-baad-4b8b-b0e1-7dbb30eeb70f)
 

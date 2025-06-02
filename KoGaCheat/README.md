@@ -122,8 +122,7 @@ Extracted from malware payload:
 ## Detection Signatures
 
 - YARA Rule
-  
-```json
+```yara
 rule KogaCheat_RAT {
    meta:
       description = "Detects KogaCheat RAT payload"
@@ -137,8 +136,6 @@ rule KogaCheat_RAT {
       any of them
 }
 ```
-
-
 --- 
 
 # Disclaimer

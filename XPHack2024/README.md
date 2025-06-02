@@ -81,5 +81,5 @@ URL        | hxxps://www[.]upload[.]ee/files/16920215/XPExploit_V2.1.zip.html
 - Likely targets: High end accounts (level, gold)  
 
 Analysis Date: April 2024  
-Status: Closed Investigation.
-( ? ) Unconfirmed Threat Actor: Scared.
+Status: Closed Investigation. <br>
+Threat Actor: Scared.

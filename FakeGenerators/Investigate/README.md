@@ -7,7 +7,7 @@ I don't know how delusional you have to be to actually believe those.. <br>
 
 > ![image](https://github.com/user-attachments/assets/dd938e66-83fd-41da-8678-7de74a4651b7)
 
-Obvious Phishing Pattern:
+Obvious Survey Scam Pattern:
 
 - None of those currencies exist in KoGaMa
 - Checking only for Username, which I must say - is actually quite rare with such type of websites, but that simply means it remains unchecked.

@@ -3,7 +3,7 @@ I don't know how delusional you have to be to actually believe those.. <br>
 
 
 - - -
-### welcomegaming.com
+### welcomegaming
 
 > ![image](https://github.com/user-attachments/assets/dd938e66-83fd-41da-8678-7de74a4651b7)
 
@@ -15,3 +15,8 @@ Obvious Survey Scam Pattern:
 - Ends up with a survey scam.
 
 > ![image](https://github.com/user-attachments/assets/554c1fe6-3286-42a8-ba7b-234af2c746b0)
+>
+> Pretty much the same scenario with 'thekingplayers'
+> ![image](https://github.com/user-attachments/assets/8d5749b5-0846-4285-916b-4945a9a37300)
+
+- - -
